@@ -20,9 +20,14 @@ import {
   DollarSign,
   Shield,
   Star,
+  Users,
+  Settings,
+  FileText,
+  Truck,
 } from "lucide-react";
 import { Header } from "../Admin/Booking";
 import { Footer } from "../HomePage/Footer";
+import { Link } from "react-router-dom";
 
 // Mock Data
 const drivers = [
@@ -549,6 +554,72 @@ export function PlanTrips() {
                 </CardContent>
               </Card>
             </div>
+          </div>
+
+          {/* Navigation Buttons Section */}
+          <div className='mt-12 mb-8'>
+            <Card>
+              <CardHeader>
+                <CardTitle className='text-center'>
+                  These are the pages I have create for the presentation
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4'>
+                  <Link to='/destinations'>
+                    <Button
+                      variant='outline'
+                      className='w-full h-20 flex flex-col items-center justify-center gap-2 hover:bg-blue-50 hover:border-blue-300'
+                    >
+                      <MapPin className='h-6 w-6 text-blue-600' />
+                      <span className='text-sm font-medium'>Destinations</span>
+                    </Button>
+                  </Link>
+
+                  <Link to='/driver'>
+                    <Button
+                      variant='outline'
+                      className='w-full h-20 flex flex-col items-center justify-center gap-2 hover:bg-green-50 hover:border-green-300'
+                    >
+                      <Users className='h-6 w-6 text-green-600' />
+                      <span className='text-sm font-medium'>Add Driver</span>
+                    </Button>
+                  </Link>
+
+                  <Link to='/vehicle'>
+                    <Button
+                      variant='outline'
+                      className='w-full h-20 flex flex-col items-center justify-center gap-2 hover:bg-purple-50 hover:border-purple-300'
+                    >
+                      <Truck className='h-6 w-6 text-purple-600' />
+                      <span className='text-sm font-medium'>Add Vehicle</span>
+                    </Button>
+                  </Link>
+
+                  <Link to='/admin'>
+                    <Button
+                      variant='outline'
+                      className='w-full h-20 flex flex-col items-center justify-center gap-2 hover:bg-slate-50 hover:border-slate-300'
+                    >
+                      <Settings className='h-6 w-6 text-slate-600' />
+                      <span className='text-sm font-medium'>Admin</span>
+                    </Button>
+                  </Link>
+
+                  <Link to='/customer-details'>
+                    <Button
+                      variant='outline'
+                      className='w-full h-20 flex flex-col items-center justify-center gap-2 hover:bg-red-50 hover:border-red-300'
+                    >
+                      <FileText className='h-6 w-6 text-red-600' />
+                      <span className='text-sm font-medium'>
+                        Collect Customer Details
+                      </span>
+                    </Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </div>

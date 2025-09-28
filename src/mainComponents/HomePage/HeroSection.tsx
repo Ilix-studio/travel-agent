@@ -238,10 +238,12 @@ export default function HeroSection() {
 
             {/* CTA Buttons */}
             <div className='flex flex-col sm:flex-row gap-6'>
-              <button className='bg-gradient-to-r from-amber-500 to-amber-700 hover:from-amber-600 hover:to-amber-800 text-black px-10 py-6 text-lg font-semibold shadow-2xl shadow-amber-500/30 hover:shadow-amber-500/50 transition-all duration-300 hover:scale-105 rounded-lg flex items-center justify-center gap-2'>
-                Plan Your Trip
-                <ArrowRight className='h-5 w-5' />
-              </button>
+              <Link to='/trips'>
+                <button className='bg-gradient-to-r from-amber-500 to-amber-700 hover:from-amber-600 hover:to-amber-800 text-black px-10 py-6 text-lg font-semibold shadow-2xl shadow-amber-500/30 hover:shadow-amber-500/50 transition-all duration-300 hover:scale-105 rounded-lg flex items-center justify-center gap-2'>
+                  Plan Your Trip
+                  <ArrowRight className='h-5 w-5' />
+                </button>
+              </Link>
               <button
                 className='border-2 border-white/30 text-white hover:text-black hover:bg-white/90 
                backdrop-blur-sm px-10 py-6 text-lg font-semibold 

@@ -6,6 +6,7 @@ import { AdminDashboard } from "./mainComponents/Admin/AdminDashboard";
 import DriverForm from "./mainComponents/User/DriverForm";
 import { PlanTrips } from "./mainComponents/Important/PlanTrips";
 import VehicleForm from "./mainComponents/Important/VehicleForm";
+import CustomerDetails from "./mainComponents/Important/CustomerDetails";
 
 const App = () => {
   return (
@@ -17,9 +18,12 @@ const App = () => {
         <Route path='/driver' element={<DriverForm />} />
         <Route path='/trips' element={<PlanTrips />} />
         <Route path='/vehicle' element={<VehicleForm />} />
+        <Route path='/customer-details' element={<CustomerDetails />} />
       </Routes>
     </>
   );
 };
 
 export default App;
+
+//Hire driver
