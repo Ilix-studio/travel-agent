@@ -561,7 +561,7 @@ export function PlanTrips() {
             <Card>
               <CardHeader>
                 <CardTitle className='text-center'>
-                  These are the pages I have create for the presentation
+                  These are the pages I have created for the presentation
                 </CardTitle>
               </CardHeader>
               <CardContent>
